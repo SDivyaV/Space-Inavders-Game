@@ -1,0 +1,56 @@
+<style>
+  body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .game-title {
+    position: absolute;
+    top: 10px; 
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .instructions {
+    text-align: justify;
+    color: white;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 0 20px;
+    line-height: 1.5;
+  }
+
+</style>
+
+<div class="game-title">Space Invaders Game</div>
+<div class="instructions">
+  <p>Welcome to Space Invaders!</p>
+  <p>
+    <strong>Instructions:</strong><br />
+      Use the a key and d key to move your spaceship.<br />
+      Press the spacebar to shoot at the invaders.<br />
+      Avoid getting hit by enemy fire and score as many <br />
+      points as you can!
+  </p>
+  <p>Good luck, and may the force be with you!</p>
+</div>
+<div style="position: relative">
+  <p
+      style="position: absolute; z-index:10 ; color: white; 
+      left: 10px; top:10px; margin:0;
+      font-family:sans-serif;font-size: 14px;">
+      <span>Score:</span><span id="scoreElement">0</span>
+  </p>
+  <canvas></canvas>
+</div>
+
+
+<script src="./index.js"></script>
